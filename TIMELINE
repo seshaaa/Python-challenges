@@ -1,0 +1,9 @@
+from datetime import datetime
+
+print("Please use format MM, DD, YY (eg : jan 1 2004)")
+a = str(input("Start time:"))
+b = str(input("End time:"))
+start = datetime.strptime(a,'%b %d %Y')
+end = datetime.strptime(b, '%b %d %Y')
+
+print(end-start)
