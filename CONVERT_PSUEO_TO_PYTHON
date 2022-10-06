@@ -1,0 +1,13 @@
+print("Choose the data type you want to enter by inputing the number before the data type")
+a = print('1.Integer', '2.Real', '3.Char', '4.String', '5.Boolean', '6.Date')
+b = int(input("Enter the number:"))
+if b == int(1):
+   c = int(input("Enter an integer:"))
+   print(c), print("INT is same in peudocode and python!")
+elif b == int(2):
+    c = float(input("Enter a number:"))
+    print(c), print("REAL is equal to FLOAT in python!")
+elif b == int(3):
+    c = str(input("Enter data:"))
+    print(c), print("Python doesn't have CHAR but its equal to STRING!")
+    
