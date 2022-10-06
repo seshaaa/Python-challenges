@@ -1,0 +1,8 @@
+char = input()
+if(len(char)==1):
+  print("true")
+else:
+    print("false")
+
+
+
