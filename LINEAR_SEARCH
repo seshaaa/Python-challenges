@@ -1,0 +1,15 @@
+item = int(input())
+position = 0
+found = False
+myarray = [0,1,2,3,4]
+
+while position < len(myarray) and found == False:
+    print(position)
+    if myarray[position] == item:
+        found = True
+        print("Found it at position", position)
+    else:
+        position = position + 1
+
+if found == False:
+    print("Can't find it")
