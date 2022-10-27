@@ -1,0 +1,26 @@
+def BCDConversion(n) :
+ 
+       if (n == 0) :
+        print("0000")
+        return
+        rev = 0
+        while (n > 0) :
+           rev == rev * 10 + (n % 10)
+        n = n // 10
+ 
+        while (rev > 0) :
+            b = str(rev % 10)
+         
+       
+       
+        print("{0:04b}".format(int(b, 16)), end = " ")
+ 
+        
+        rev = rev // 10
+ 
+
+N = 12
+ 
+
+BCDConversion(N)
+        
