@@ -1,0 +1,52 @@
+import random
+
+
+r1 = "All mistakes are fixable, yet you aren’t."
+
+r2 = "Are you at a loss for words, or did you exhaust your entire vocabulary?"
+
+r3 = "The only thing bothering me is placed between your ears."
+
+r4 = "Every time I have a stick in my hand, you look like a pinata."
+
+r5 = "When I look at you, I think to myself where have you been my whole life? Can you go back there?"
+
+r6 = "I think you just need a high five… in the face… with a chair."
+
+r7 = "When I listen to you, I think you really going to go far. I hope you stay there."
+
+r8 = "It would be a great day If you used a glue stick instead of Chapstick."
+
+r9 = "You are the reason why God is not talking to us anymore."
+
+r10 = "You can’t imagine how much happiness you can bring… by leaving the room."
+
+r11 = "Every time I think you can’t get any dumber, you prove me wrong."
+
+r12 = "I would smack you, but I’m against animal abuse."
+
+r13 = "If I wanted to kill myself, I would simply jump from your ego to your IQ."
+
+r14 = "I can’t wait to spend my whole life without you."
+
+r15 = "Whoever told you to be yourself, gave you a bad advice."
+
+r16 = "Don’t worry about me. Worry about your eyebrows."
+
+r17 = "I thought of you today. It reminded me to take out the trash."
+
+r18 = "Mirrors can't talk. Lucky for you, they can't laugh either."
+
+r19 = "I'm glad to see you're not letting your education get in the way of your ignorance."
+
+r20 = "I'd agree with you, but then we'd both be wrong."
+
+
+
+r = [r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,r11,r12,r13,r14,r15,r16,r17,r18,r19,r20]
+
+n = random.randint(0,19)
+
+name = str(input("Name: "))
+
+print(name+".", r[n])
