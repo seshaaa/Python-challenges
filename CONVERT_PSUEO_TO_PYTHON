@@ -13,7 +13,7 @@ elif b == int(3):
     print(c), print("Python doesn't have CHAR but its equal to STRING!")
 elif b == int(4):
     c = str(input("Enter anything!:")
-    print("c"), print("STRING in psuedocode is always within double brackets!)
+    print(c), print("STRING in psuedocode is always within double brackets!")
 elif b == int(5):
     print("Is 5 greater than 6? False! Its not"), print("Boolean is the same in psuedocode and python, they have two outputs, true or false!)
 elif b == int(6):
