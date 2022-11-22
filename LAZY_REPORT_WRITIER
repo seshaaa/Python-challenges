@@ -1,0 +1,27 @@
+import random
+
+
+statement1 = " Please elaborate "
+
+statement2 = " needs more content "
+
+statement3 = " better than before "
+
+statement4 = " there is more room for improvement "
+
+statement5 = " make sure to make the points relvant "
+
+statement6 = ", good!"
+
+statement7 = ", keep it up!"
+
+statement8 = " Can do better than this"
+
+
+r = [statement1,statement2,statement3,statement4,statement5,statement6,statement7,statement8]
+
+n = random.randint(0,7)
+
+name = str(input("Student name: "))
+
+print(name+r[n])
