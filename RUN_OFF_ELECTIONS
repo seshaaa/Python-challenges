@@ -1,0 +1,81 @@
+running = ["Sam", "Riley", "Jacob"]
+
+ballot = []
+choice1 = []
+choice2 = []
+choice3 = []
+
+print("./runoff Sam, Riley, Jacob")
+n = int(input("Number of voters: "))
+
+for r in range(n):
+    print("")
+    c1 = str(input("Rank 1: "))
+    choice1.append(c1)
+    c2 = str(input("Rank 2: "))
+    choice2.append(c2)
+    c3 = str(input("Rank 3: "))
+    choice3.append(c3)
+
+ballot.append(choice1)
+ballot.append(choice2)
+ballot.append(choice3)
+
+print("")
+
+vote1 = 0
+
+for v in range(len(ballot)):
+    running = ["Sam", "Riley", "Jacob"]
+    acount = ballot[vote1].count('Sam')#needed to use '' here instead of "" because the array input was with ''
+    bcount = ballot[vote1].count('Riley')
+    ccount = ballot[vote1].count('Jacob')
+
+    counts = []
+    counts.append(acount)
+    counts.append(bcount)
+    counts.append(ccount)
+
+    if acount > len(ballot[vote1])/2:
+        print("Sam")
+        break
+
+    elif bcount > len(ballot[vote1])/2:
+        print("Riley")
+        break
+
+    elif ccount > len(ballot[vote1])/2:
+        print("Jacob")
+        break
+
+    else:
+        elim=[]
+        for i in range(len(counts)):
+            if counts[i] == min(counts):
+                elim.append(i)
+        if 0 in elim :
+            #print("Sam is eliminated")
+            running.remove("Sam")
+            for r in range(len(ballot[vote1])):
+                if ballot[vote1][r] == "Sam":
+                    ballot[vote1][r] = ballot[v+1][r]
+        if 1 in elim:
+            #print("Riley is eliminated")
+            running.remove("Riley")
+            for r in range(len(ballot[vote1])):
+                if ballot[vote1][r] == "Riley":
+                    ballot[vote1][r] = ballot[v+1][r]
+        if 2 in elim:
+            #print("Jacob is eliminated")
+            running.remove("Jacob")
+            for r in range(len(ballot[vote1])):
+                if ballot[vote1][r] == "Jacob":
+                    ballot[vote1][r] = ballot[v+1][r]
+
+    if len(running)==1:
+        print(running[0])
+        break
+    elif len(running)==0 and v==len(ballot):
+        print("Tie")
+        break
+        
