@@ -4,7 +4,7 @@ a = print('1.Integer', '2.Real', '3.Char', '4.String', '5.Boolean', '6.Date')
 b = int(input("Enter the number:"))
 if b == int(1):
    c = int(input("Enter an integer:"))
-   print(c), print("INT is same in peudocode and python!")
+   print(c), print("INT is same in psuedocode and python!")
 elif b == int(2):
     c = float(input("Enter a number:"))
     print(c), print("REAL is equal to FLOAT in python!")
@@ -12,12 +12,11 @@ elif b == int(3):
     c = str(input("Enter data:"))
     print(c), print("Python doesn't have CHAR but its equal to STRING!")
 elif b == int(4):
-    c = str(input("Enter anything!:")
-    print(c), print("STRING in psuedocode is always within double brackets!")
+    c = input("Enter anything!:")
+    print("'",c,"'"), print("STRING is always in quotations in pseudocode")
 elif b == int(5):
-    print("Is 5 greater than 6? False! Its not"), print("Boolean is the same in psuedocode and python, they have two outputs, true or false!)
+    print("Is 5 greater than 6? False! Its not"), print("Boolean is the same in psuedocode and python, they have two outputs, true or false!")
 elif b == int(6):
     now = datetime.datetime.now()
     print ("Current date and time : ")
     print (now.strftime("%Y-%m-%d %H:%M:%S"))
-    
