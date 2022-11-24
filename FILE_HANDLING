@@ -1,0 +1,21 @@
+a = 0
+with open("mam.txt","r") as f:
+    for line in f:
+        if "if" in line or "If" in line:
+          a = a + 1
+print("number of words:")
+print(a)
+
+b = 0
+with open("if.txt","r") as f:
+    for line in f:
+        if "if" in line or "If" in line:
+            b = b + 1
+print("number of words")
+print(a)
+
+if a > b:
+    print(a,b)
+else:
+    print(b,a)
+    
